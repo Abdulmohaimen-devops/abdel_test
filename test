@@ -4,3 +4,19 @@ eifh.oehjw.iehfiowe
 uiewhduihewiudhue 33.33.ee.33 300.300.100.100
 8.8.8.8, 20.20.20.20
 de2hd9j39ud9829d8 192.168.10.24dddd
+
+curl -L \
+  -X PUT \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer <YOUR-TOKEN>" \
+  -H "X-GitHub-Api-Version: 2022-11-28" \
+  https://api.github.com/repos/OWNER/REPO/contents/PATH \
+  -d '{"message":"a new commit message","committer":{"name":"Monalisa Octocat","email":"octocat@github.com"},"content":"bXkgdXBkYXRlZCBmaWxlIGNvbnRlbnRz","sha":"95b966ae1c166bd92f8ae7d1c313e738c731dfc3"}'
+
+  curl -L \
+  -X PUT \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer <YOUR-TOKEN>" \
+  -H "X-GitHub-Api-Version: 2022-11-28" \
+  https://api.github.com/repos/OWNER/REPO/contents/PATH \
+  -d '{"message":"my commit message","committer":{"name":"Monalisa Octocat","email":"octocat@github.com"},"content":"bXkgbmV3IGZpbGUgY29udGVudHM="}'
